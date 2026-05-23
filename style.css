@@ -1,0 +1,172 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("3d-rendering-questions-background_23-2151455632.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  overflow-x: hidden;
+}
+
+/* Heading */
+.main-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  color: #15011a;
+
+  margin-bottom: 25px;
+
+  transition: all 0.3s ease;
+}
+
+/* Quiz Box */
+.quiz-container {
+  background: rgba(230, 193, 234, 0.92);
+  backdrop-filter: blur(5px);
+
+  padding: 40px;
+  width: 50%;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.quiz-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* Heading inside quiz */
+h2 {
+  color: #0c0109;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  margin: 8px 0;
+  padding: 12px;
+  width: 100%;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  background: #fefbfd;
+  color: #170118;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #aa2bc0;
+  color: white;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#next {
+  background: #7113a8;
+  color: rgb(245, 241, 241);
+}
+
+#next:hover {
+  background: #5d0f89;
+}
+
+#start-btn,
+#restart-btn {
+  background: #022611;
+  color: white;
+}
+
+#start-btn:hover,
+#restart-btn:hover {
+  background: #03471f;
+}
+
+.correct {
+  background: #01160a !important;
+  color: white;
+}
+
+.wrong {
+  background: #a22d20 !important;
+  color: white;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .quiz-container {
+    width: 70%;
+    padding: 35px;
+  }
+
+  .main-heading {
+    font-size: 34px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    padding: 20px 0;
+  }
+
+  .quiz-container {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .main-heading {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .quiz-container {
+    width: 90%;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .main-heading {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 9px;
+  }
+}
